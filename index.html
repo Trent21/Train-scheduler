@@ -1,0 +1,110 @@
+<DOCTYPE html>
+<html>
+	
+<head>
+	
+<title> Train Scheduler </title>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="../train/style.css">
+
+
+<script src="../train/java.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+	<div class="jumbotron">
+	  <h1 style="text-align: center;">Train Scheduler</h1>
+	  <p style="text-align: center;">Choo Choo!</p>
+	</div>
+
+
+
+
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-primary">
+				<div class="panel- heading">
+					<h3 class="panel-title"> <strong> Current Train schedule </strong></h3>
+				</div>
+					<div class="panel-body">
+						<table class="table table-hover" id="trainTable">
+							<thead>
+								<tr>
+									<th> Train name </th>
+									<th> Destination </th>
+									<th> Frequency (minutes) </th>
+									<th> Next Arrival </th>
+									<th> Minutes away </th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+</br>
+
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-primary"></div>
+				<div class="panel heading">
+					<h3 class="panel-title"> <strong>Add Train</strong></h3>
+				</div>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<label for=""> Train name </label>
+								<input type="text" class="form-control" name="trainNameInput"> 
+							</div>
+
+							<div class="form-group">
+								<label for=""> Destination</label>
+								<input type="text" class="form-control" name="destinationNameInput"> 
+							</div>
+
+							<div class="form-group">
+								<label for=""> First train time (HH:mm) </label>
+								<input type="text" class="form-control" name="firstrainInput"> 
+							</div>
+
+							<div class="form-group">
+								<label for=""> Frequency (minutes) </label>
+								<input type="text" class="form-control" name="frequencyInput"> 
+							</div>
+							<button type="submit" class="btn btn-primary" id="addTrainbutton"> Sumbit </button>
+						</form>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+
+
+</html>

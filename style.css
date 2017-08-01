@@ -1,0 +1,23 @@
+body {
+	background-color: lightGrey;
+}
+
+.jumbotron {
+	background-color: lightBlue;
+	border: 1px solid;
+	border-color: black;
+}
+
+.row {
+	margin-right: 60px ;
+	margin-left: 60px;
+}
+
+.panel-title {
+	text-decoration: underline;
+}
+
+.col-lg-12 {
+	border: 1px solid;
+	border-color: black;
+}
